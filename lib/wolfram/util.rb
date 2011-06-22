@@ -16,7 +16,7 @@ module Wolfram
 
     # Finds or creates a module by name for a given module
     def self.module_get(mod, name)
-      mod.const_defined?(name) ? mod.const_get(name) :
+      mod.const_defined?(name, false) ? mod.const_get(name) :
         mod.const_set(name, Module.new)
     end
 
