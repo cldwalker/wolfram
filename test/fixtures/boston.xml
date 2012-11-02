@@ -1,187 +1,119 @@
-<queryresult success="true" error="false" numpods="13" datatypes="City,MetropolitanArea,UrbanArea,USCounty,USState" timedout="" timing="3.101" parsetiming="0.117" parsetimedout="false" recalculate="" version="2.0">
- <pod title="Input interpretation" scanner="Identity" id="Input" position="100" error="false" numsubpods="1">
-  <subpod title="">
-   <plaintext>Boston, Massachusetts</plaintext>
-   <img src="http://www1.wolframalpha.com/Calculate/MSP/MSP102619e3b0ea35330h1a000028gg82hdh359db20?MSPStoreType=image/gif&amp;s=12" alt="Boston, Massachusetts" title="Boston, Massachusetts" width="147" height="20"/>
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='true'
+    error='false'
+    numpods='2'
+    datatypes='City,MetropolitanArea,UrbanArea'
+    timedout='Data,Character'
+    timedoutpods=''
+    timing='1.157'
+    parsetiming='0.237'
+    parsetimedout='false'
+    recalculate='http://www4a.wolframalpha.com/api/v2/recalc.jsp?id=MSPa30241a3hbabae907f3a000002a85ade2hci82h1e&amp;s=53'
+    id='MSPa30251a3hbabae907f3a00000470a85hc67b99i3h'
+    host='http://www4a.wolframalpha.com'
+    server='53'
+    related='http://www4a.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa30261a3hbabae907f3a000003427e8938201ddg4&amp;s=53'
+    version='2.6'>
+ <pod title='Input interpretation'
+     scanner='Identity'
+     id='Input'
+     position='100'
+     error='false'
+     numsubpods='1'>
+  <subpod title=''>
+   <plaintext>Boston, Massachusetts, United States</plaintext>
+   <img src='http://www4a.wolframalpha.com/Calculate/MSP/MSP30271a3hbabae907f3a000004d0heg3h53ih4b3e?MSPStoreType=image/gif&amp;s=53'
+       alt='Boston, Massachusetts, United States'
+       title='Boston, Massachusetts, United States'
+       width='241'
+       height='18' />
   </subpod>
  </pod>
- <pod title="Populations" scanner="Data" id="Population:CityData" position="200" error="false" numsubpods="1">
-  <subpod title="">
-   <plaintext>city population | 609023 people  (country rank: 22nd)  (2008 estimate)
+ <pod title='Populations'
+     scanner='Data'
+     id='Population:CityData'
+     position='200'
+     error='false'
+     numsubpods='1'
+     primary='true'>
+  <subpod title=''>
+   <plaintext>city population | 617594 people  (country rank: 23rd)  (2010 estimate)
 urban area population | 4.032 million people  (Boston urban area)  (country rank: 7th)  (2000 estimate)
-metro area population | 4.589 million people  (Boston metro area)  (country rank: 10th)  (2009 estimate)</plaintext>
-   <img src="http://www1.wolframalpha.com/Calculate/MSP/MSP102719e3b0ea35330h1a00001584427c4e8e6cec?MSPStoreType=image/gif&amp;s=12" alt="city population | 609023 people  (country rank: 22nd)  (2008 estimate) urban area population | 4.032 million people  (Boston urban area)  (country rank: 7th)  (2000 estimate) metro area population | 4.589 million people  (Boston metro area)  (country rank: 10th)  (2009 estimate)" title="city population | 609023 people  (country rank: 22nd)  (2008 estimate) urban area population | 4.032 million people  (Boston urban area)  (country rank: 7th)  (2000 estimate) metro area population | 4.589 million people  (Boston metro area)  (country rank: 10th)  (2009 estimate)" width="496" height="160"/>
+metro area population | 4.591 million people  (Boston metro area)  (country rank: 10th)  (2011 estimate)</plaintext>
+   <img src='http://www4a.wolframalpha.com/Calculate/MSP/MSP30281a3hbabae907f3a000002i57d68ab7148579?MSPStoreType=image/gif&amp;s=53'
+       alt='city population | 617594 people  (country rank: 23rd)  (2010 estimate)
+urban area population | 4.032 million people  (Boston urban area)  (country rank: 7th)  (2000 estimate)
+metro area population | 4.591 million people  (Boston metro area)  (country rank: 10th)  (2011 estimate)'
+       title='city population | 617594 people  (country rank: 23rd)  (2010 estimate)
+urban area population | 4.032 million people  (Boston urban area)  (country rank: 7th)  (2000 estimate)
+metro area population | 4.591 million people  (Boston metro area)  (country rank: 10th)  (2011 estimate)'
+       width='496'
+       height='151' />
   </subpod>
-  <states count="1">
-   <state name="Show history" input="Population:CityData__Show history"/>
+  <states count='1'>
+   <state name='Show history'
+       input='Population:CityData__Show history' />
   </states>
  </pod>
- <pod title="Location" scanner="Data" id="Location:CityData" position="300" error="false" numsubpods="1">
-  <subpod title="">
-   <plaintext/>
-   <img src="http://www1.wolframalpha.com/Calculate/MSP/MSP102819e3b0ea35330h1a000020e9fi69ecabg1i0?MSPStoreType=image/gif&amp;s=12" alt="" title="" width="300" height="161"/>
-  </subpod>
-  <states count="2">
-   <state name="World map" input="Location:CityData__World map"/>
-   <state name="Show coordinates" input="Location:CityData__Show coordinates"/>
-  </states>
-  <infos count="1">
-   <info>
-    <link url="http://maps.google.com/maps?t=h&amp;ie=UTF8&amp;ll=42.3216,-71.0891&amp;z=12" text="Satellite image"/>
-   </info>
-  </infos>
- </pod>
- <pod title="Local map" scanner="Data" id="Map:CityData" position="400" error="false" numsubpods="1">
-  <subpod title="">
-   <plaintext/>
-   <img src="http://www1.wolframalpha.com/Calculate/MSP/MSP102919e3b0ea35330h1a000038e0a9d82ceg5fga?MSPStoreType=image/gif&amp;s=12" alt="" title="" width="256" height="278"/>
-  </subpod>
-  <states count="3">
-   <state name="Metric" input="Map:CityData__Metric"/>
-   <state name="Larger display" input="Map:CityData__Larger display"/>
-   <statelist count="13" value="9 miles across">
-    <state name="2 miles across" input="Map:CityData__2 miles across"/>
-    <state name="4 miles across" input="Map:CityData__4 miles across"/>
-    <state name="9 miles across" input="Map:CityData__9 miles across"/>
-    <state name="18 miles across" input="Map:CityData__18 miles across"/>
-    <state name="36 miles across" input="Map:CityData__36 miles across"/>
-    <state name="72 miles across" input="Map:CityData__72 miles across"/>
-    <state name="140 miles across" input="Map:CityData__140 miles across"/>
-    <state name="290 miles across" input="Map:CityData__290 miles across"/>
-    <state name="570 miles across" input="Map:CityData__570 miles across"/>
-    <state name="1100 miles across" input="Map:CityData__1100 miles across"/>
-    <state name="2200 miles across" input="Map:CityData__2200 miles across"/>
-    <state name="3900 miles across" input="Map:CityData__3900 miles across"/>
-    <state name="7200 miles across" input="Map:CityData__7200 miles across"/>
-   </statelist>
-  </states>
-  <infos count="1">
-   <info>
-    <link url="http://maps.google.com/maps?t=h&amp;ie=UTF8&amp;ll=42.3216,-71.0891&amp;z=12" text="Satellite image"/>
-   </info>
-  </infos>
- </pod>
- <pod title="Current local time" scanner="Data" id="CurrentTime:CityData" position="500" error="false" numsubpods="1">
-  <subpod title="">
-   <plaintext>5:32 pm EST | Sunday, January 23, 2011</plaintext>
-   <img src="http://www1.wolframalpha.com/Calculate/MSP/MSP103019e3b0ea35330h1a000025c691cb4f654g5c?MSPStoreType=image/gif&amp;s=12" alt="5:32 pm EST | Sunday, January 23, 2011" title="5:32 pm EST | Sunday, January 23, 2011" width="270" height="20"/>
-  </subpod>
- </pod>
- <pod title="Current weather" scanner="Data" id="WeatherPod:CityData" position="600" error="false" numsubpods="1">
-  <subpod title="">
-   <plaintext>19 &#xB0;F  (wind chill: 7 &#xB0;F)  |  relative humidity: 45%  |  wind: 12 mph  |  partly cloudy</plaintext>
-   <img src="http://www1.wolframalpha.com/Calculate/MSP/MSP103119e3b0ea35330h1a000037d137ggg45f08b4?MSPStoreType=image/gif&amp;s=12" alt="19 °F  (wind chill: 7 °F)  |  relative humidity: 45%  |  wind: 12 mph  |  partly cloudy" title="19 °F  (wind chill: 7 °F)  |  relative humidity: 45%  |  wind: 12 mph  |  partly cloudy" width="496" height="42"/>
-  </subpod>
-  <states count="2">
-   <state name="Show history" input="WeatherPod:CityData__Show history"/>
-   <state name="Show metric" input="WeatherPod:CityData__Show metric"/>
-  </states>
- </pod>
- <pod title="Economic properties" scanner="Data" id="EconomicProperties:CityData" position="700" error="false" numsubpods="1">
-  <subpod title="">
-   <plaintext>cost of living index | 1.3  &#xD7; national average  (Q3 2010)
-median home price | $332900 (Boston metro area) (annual change: -7.81%)  (2009)
-unemployment rate | 8%  (September 2010)
-total sales tax rate | 6.25%</plaintext>
-   <img src="http://www1.wolframalpha.com/Calculate/MSP/MSP103219e3b0ea35330h1a00003ih0c624f9fcig5g?MSPStoreType=image/gif&amp;s=12" alt="cost of living index | 1.3  × national average  (Q3 2010) median home price | $332900 (Boston metro area) (annual change: -7.81%)  (2009) unemployment rate | 8%  (September 2010) total sales tax rate | 6.25%" title="cost of living index | 1.3  × national average  (Q3 2010) median home price | $332900 (Boston metro area) (annual change: -7.81%)  (2009) unemployment rate | 8%  (September 2010) total sales tax rate | 6.25%" width="496" height="158"/>
-  </subpod>
- </pod>
- <pod title="Other indicators" scanner="Data" id="QualityOfLife:CityData" position="800" error="false" numsubpods="1">
-  <subpod title="">
-   <plaintext>total rate of violent crime | 2.4  &#xD7; national average  (2008 estimate)
-total rate of property crime | 1.2  &#xD7; national average  (2008 estimate)
-average daily traffic delay | 7.1 min/day</plaintext>
-   <img src="http://www1.wolframalpha.com/Calculate/MSP/MSP103319e3b0ea35330h1a00002c43ica63fee46b2?MSPStoreType=image/gif&amp;s=12" alt="total rate of violent crime | 2.4  × national average  (2008 estimate) total rate of property crime | 1.2  × national average  (2008 estimate) average daily traffic delay | 7.1 min/day" title="total rate of violent crime | 2.4  × national average  (2008 estimate) total rate of property crime | 1.2  × national average  (2008 estimate) average daily traffic delay | 7.1 min/day" width="474" height="106"/>
-  </subpod>
-  <infos count="1">
-   <info>
-    <units count="1">
-     <unit short="min/day" long="minutes per day"/>
-     <img src="http://www1.wolframalpha.com/Calculate/MSP/MSP103419e3b0ea35330h1a00003eheg0g4i784h0a8?MSPStoreType=image/gif&amp;s=12" width="179" height="26"/>
-    </units>
-   </info>
-  </infos>
- </pod>
- <pod title="Geographic properties" scanner="Data" id="GeographicProperties:CityData" position="900" error="false" numsubpods="1">
-  <subpod title="">
-   <plaintext>elevation | 46 ft
-area | 48.43 mi^2
-population density | 12576 people/mi^2</plaintext>
-   <img src="http://www1.wolframalpha.com/Calculate/MSP/MSP103519e3b0ea35330h1a00001a2di1ih5177fie0?MSPStoreType=image/gif&amp;s=12" alt="elevation | 46 ft area | 48.43 mi^2 population density | 12576 people/mi^2" title="elevation | 46 ft area | 48.43 mi^2 population density | 12576 people/mi^2" width="286" height="106"/>
-  </subpod>
-  <states count="1">
-   <state name="Show metric" input="GeographicProperties:CityData__Show metric"/>
-  </states>
-  <infos count="1">
-   <info>
-    <units count="3">
-     <unit short="ft" long="feet"/>
-     <unit short="mi^2" long="square miles"/>
-     <unit short="people/mi^2" long="people per square mile"/>
-     <img src="http://www1.wolframalpha.com/Calculate/MSP/MSP103619e3b0ea35330h1a00003d88iibb6i7093e8?MSPStoreType=image/gif&amp;s=12" width="232" height="74"/>
-    </units>
-   </info>
-  </infos>
- </pod>
- <pod title="Nearby cities" scanner="Data" id="CityHierarchyInfo:CityData" position="1000" error="false" numsubpods="1">
-  <subpod title="">
-   <plaintext>Cambridge, Massachusetts | 4 miles north-northwest | 105596 people
-Quincy, Massachusetts | 6 miles southeast | 92339 people
-Providence, Rhode Island | 38 miles south-southwest | 171557 people
-New York City, New York | 184 miles southwest | 8.364 million people
-(straight-line distances between city centers)</plaintext>
-   <img src="http://www1.wolframalpha.com/Calculate/MSP/MSP103719e3b0ea35330h1a00000ddigh995a68547a?MSPStoreType=image/gif&amp;s=12" alt="Cambridge, Massachusetts | 4 miles north-northwest | 105596 people Quincy, Massachusetts | 6 miles southeast | 92339 people Providence, Rhode Island | 38 miles south-southwest | 171557 people New York City, New York | 184 miles southwest | 8.364 million people (straight-line distances between city centers)" title="Cambridge, Massachusetts | 4 miles north-northwest | 105596 people Quincy, Massachusetts | 6 miles southeast | 92339 people Providence, Rhode Island | 38 miles south-southwest | 171557 people New York City, New York | 184 miles southwest | 8.364 million people (straight-line distances between city centers)" width="495" height="209"/>
-  </subpod>
-  <states count="2">
-   <state name="Show metric" input="CityHierarchyInfo:CityData__Show metric"/>
-   <state name="More" input="CityHierarchyInfo:CityData__More"/>
-  </states>
- </pod>
- <pod title="County" scanner="Data" id="CountyInfo:CityData" position="1100" error="false" numsubpods="1">
-  <subpod title="">
-   <plaintext>Suffolk County, Massachusetts</plaintext>
-   <img src="http://www1.wolframalpha.com/Calculate/MSP/MSP103819e3b0ea35330h1a000011cc3hc37d56i612?MSPStoreType=image/gif&amp;s=12" alt="Suffolk County, Massachusetts" title="Suffolk County, Massachusetts" width="201" height="20"/>
-  </subpod>
- </pod>
- <pod title="Nicknames" scanner="Data" id="BasicInformation:CityData" position="1200" error="false" numsubpods="1">
-  <subpod title="">
-   <plaintext>Athens of America  |  Beantown  |  The Hub  |  The Cradle of Liberty</plaintext>
-   <img src="http://www1.wolframalpha.com/Calculate/MSP/MSP103919e3b0ea35330h1a0000332h1hcg83g4g27a?MSPStoreType=image/gif&amp;s=12" alt="Athens of America  |  Beantown  |  The Hub  |  The Cradle of Liberty" title="Athens of America  |  Beantown  |  The Hub  |  The Cradle of Liberty" width="452" height="20"/>
-  </subpod>
- </pod>
- <pod title="Notable people born in Boston" scanner="Data" id="NotablePeople:CityData" position="1300" error="false" numsubpods="1">
-  <subpod title="">
-   <plaintext>Benjamin Franklin  (1706)  |  Edgar Allan Poe  (1809)  |  Michael Bloomberg  (1942)  |  Robert F. Kennedy  (1925)  |  James Taylor  (1948)  |  Ralph Waldo Emerson  (1803)  |  Donna Summer  (1948)  |  Guru  (1961)  |  Leonard Nimoy  (1931)  |  Uma Thurman  (1970)  |  ...</plaintext>
-   <img src="http://www1.wolframalpha.com/Calculate/MSP/MSP104019e3b0ea35330h1a00006509g4f69da8a7i5?MSPStoreType=image/gif&amp;s=12" alt="Benjamin Franklin  (1706)  |  Edgar Allan Poe  (1809)  |  Michael Bloomberg  (1942)  |  Robert F. Kennedy  (1925)  |  James Taylor  (1948)  |  Ralph Waldo Emerson  (1803)  |  Donna Summer  (1948)  |  Guru  (1961)  |  Leonard Nimoy  (1931)  |  Uma Thurman  (1970)  |  ..." title="Benjamin Franklin  (1706)  |  Edgar Allan Poe  (1809)  |  Michael Bloomberg  (1942)  |  Robert F. Kennedy  (1925)  |  James Taylor  (1948)  |  Ralph Waldo Emerson  (1803)  |  Donna Summer  (1948)  |  Guru  (1961)  |  Leonard Nimoy  (1931)  |  Uma Thurman  (1970)  |  ..." width="461" height="101"/>
-  </subpod>
-  <states count="4">
-   <state name="More" input="NotablePeople:CityData__More"/>
-   <state name="Show dates" input="NotablePeople:CityData__Show dates"/>
-   <state name="Show occupations" input="NotablePeople:CityData__Show occupations"/>
-   <state name="Show deaths" input="NotablePeople:CityData__Show deaths"/>
-  </states>
- </pod>
- <assumptions count="2">
-  <assumption type="Clash" word="boston" count="4">
-   <value name="City" desc="a city" input="*C.boston-_*City-"/>
-   <value name="Surname" desc="a surname" input="*C.boston-_*Surname-"/>
-   <value name="AdministrativeDivision" desc="an administrative division" input="*C.boston-_*AdministrativeDivision-"/>
-   <value name="GivenName" desc="a given name" input="*C.boston-_*GivenName-"/>
+ <assumptions count='2'>
+  <assumption type='Clash'
+      word='boston'
+      template='Assuming &quot;${word}&quot; is ${desc1}. Use as ${desc2} instead'
+      count='6'>
+   <value name='City'
+       desc='a city'
+       input='*C.boston-_*City-' />
+   <value name='MLBTeam'
+       desc='an MLB team'
+       input='*C.boston-_*MLBTeam-' />
+   <value name='MusicAct'
+       desc='a music act'
+       input='*C.boston-_*MusicAct-' />
+   <value name='AdministrativeDivision'
+       desc='an administrative division'
+       input='*C.boston-_*AdministrativeDivision-' />
+   <value name='Surname'
+       desc='a surname'
+       input='*C.boston-_*Surname-' />
+   <value name='GivenName'
+       desc='a given name'
+       input='*C.boston-_*GivenName-' />
   </assumption>
-  <assumption type="SubCategory" word="boston" count="7">
-   <value name="{Boston, Massachusetts, UnitedStates}" desc="Boston (Massachusetts, USA)" input="*DPClash.CityE.boston-_**Boston.Massachusetts.UnitedStates--"/>
-   <value name="{Boston, NewYork, UnitedStates}" desc="Boston (New York, USA)" input="*DPClash.CityE.boston-_**Boston.NewYork.UnitedStates--"/>
-   <value name="{Boston, Lincolnshire, UnitedKingdom}" desc="Boston (United Kingdom)" input="*DPClash.CityE.boston-_**Boston.Lincolnshire.UnitedKingdom--"/>
-   <value name="{Boston, Georgia, UnitedStates}" desc="Boston (Georgia, USA)" input="*DPClash.CityE.boston-_**Boston.Georgia.UnitedStates--"/>
-   <value name="{Boston, Karakalpakstan, Uzbekistan}" desc="Boston (Uzbekistan)" input="*DPClash.CityE.boston-_**Boston.Karakalpakstan.Uzbekistan--"/>
-   <value name="{Boston, Indiana, UnitedStates}" desc="Boston (Indiana, USA)" input="*DPClash.CityE.boston-_**Boston.Indiana.UnitedStates--"/>
-   <value name="{Boston, DavaoOriental, Philippines}" desc="Boston (Philippines)" input="*DPClash.CityE.boston-_**Boston.DavaoOriental.Philippines--"/>
+  <assumption type='SubCategory'
+      word='boston'
+      template='Assuming ${desc1}. Use ${desc2} instead'
+      count='7'>
+   <value name='{Boston, Massachusetts, UnitedStates}'
+       desc='Boston (Massachusetts, USA)'
+       input='*DPClash.CityE.boston-_**Boston.Massachusetts.UnitedStates--' />
+   <value name='{Boston, Lincolnshire, UnitedKingdom}'
+       desc='Boston (United Kingdom)'
+       input='*DPClash.CityE.boston-_**Boston.Lincolnshire.UnitedKingdom--' />
+   <value name='{Boston, Karakalpakstan, Uzbekistan}'
+       desc='Boston (Uzbekistan)'
+       input='*DPClash.CityE.boston-_**Boston.Karakalpakstan.Uzbekistan--' />
+   <value name='{Boston, NewYork, UnitedStates}'
+       desc='Boston (New York, USA)'
+       input='*DPClash.CityE.boston-_**Boston.NewYork.UnitedStates--' />
+   <value name='{Boston, DavaoOriental, Philippines}'
+       desc='Boston (Philippines)'
+       input='*DPClash.CityE.boston-_**Boston.DavaoOriental.Philippines--' />
+   <value name='{Boston, Georgia, UnitedStates}'
+       desc='Boston (Georgia, USA)'
+       input='*DPClash.CityE.boston-_**Boston.Georgia.UnitedStates--' />
+   <value name='{Boston, Indiana, UnitedStates}'
+       desc='Boston (Indiana, USA)'
+       input='*DPClash.CityE.boston-_**Boston.Indiana.UnitedStates--' />
   </assumption>
  </assumptions>
- <sources count="4">
-  <source url="http://www.wolframalpha.com/sources/CityDataSourceInformationNotes.html" text="City data"/>
-  <source url="http://www.wolframalpha.com/sources/OpenStreetMapSourceInformationNotes.html" text="Open street map"/>
-  <source url="http://www.wolframalpha.com/sources/PeopleDataSourceInformationNotes.html" text="People data"/>
-  <source url="http://www.wolframalpha.com/sources/WeatherDataSourceInformationNotes.html" text="Weather data"/>
+ <sources count='4'>
+  <source url='http://www.wolframalpha.com/sources/CityDataSourceInformationNotes.html'
+      text='City data' />
+  <source url='http://www.wolframalpha.com/sources/MetropolitanAreaDataSourceInformationNotes.html'
+      text='Metropolitan area data' />
+  <source url='http://www.wolframalpha.com/sources/UrbanAreaDataSourceInformationNotes.html'
+      text='Urban area data' />
+  <source url='http://www.wolframalpha.com/sources/USCensusDataSourceInformationNotes.html'
+      text='US census data' />
  </sources>
 </queryresult>
