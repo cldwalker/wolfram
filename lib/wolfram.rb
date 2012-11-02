@@ -4,6 +4,8 @@ require 'wolfram/util'
 require 'wolfram/query'
 require 'wolfram/result'
 require 'wolfram/pod'
+require 'wolfram/subpod'
+require 'wolfram/state'
 require 'wolfram/assumption'
 require 'wolfram/version'
 
