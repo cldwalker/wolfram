@@ -13,13 +13,15 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = ">= 1.3.6"
   s.rubyforge_project = 'tagaholic'
   s.executables = ['wolfram']
+  s.files = Dir.glob(%w[{lib,test}/**/*.rb bin/* [A-Z]*.{txt,rdoc,md} ext/**/*.{rb,c} **/deps.rip]) + %w{Rakefile wolfram.gemspec}
+  s.files += Dir.glob(['test/fixtures/*.xml'])
+  s.extra_rdoc_files = ["README.rdoc", "LICENSE.txt"]
+  s.license = 'MIT'
+
+  s.add_dependency 'rake'
   s.add_dependency 'nokogiri', '>= 1.4.3'
   s.add_development_dependency 'rr'
   s.add_development_dependency 'bacon', '>= 1.1.0'
   s.add_development_dependency 'bacon-rr'
   s.add_development_dependency 'bacon-bits'
-  s.files = Dir.glob(%w[{lib,test}/**/*.rb bin/* [A-Z]*.{txt,rdoc} ext/**/*.{rb,c} **/deps.rip]) + %w{Rakefile .gemspec}
-  s.files += Dir.glob(['test/fixtures/*.xml'])
-  s.extra_rdoc_files = ["README.rdoc", "LICENSE.txt"]
-  s.license = 'MIT'
 end
