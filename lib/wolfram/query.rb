@@ -3,11 +3,12 @@ require 'open-uri'
 module Wolfram
   # When given an input, appid and other query params, creates a Result object
   class Query
+    attr_accessor :input, :options, :appid, :query_uri
+
     def self.fetch(uri)
       open(uri).read
     end
 
-    attr_accessor :input, :options, :appid, :query_uri
     def initialize(input, options = {})
       @input = input
       @appid = options.delete(:appid) || Wolfram.appid || raise("No APPID set")
