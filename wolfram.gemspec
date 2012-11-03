@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.executables = ['wolfram']
   s.files = Dir.glob(%w[{lib,test}/**/*.rb bin/* [A-Z]*.{txt,rdoc,md} ext/**/*.{rb,c} **/deps.rip]) + %w{Rakefile wolfram.gemspec}
   s.files += Dir.glob(['test/fixtures/*.xml'])
-  s.extra_rdoc_files = ["README.rdoc", "LICENSE.txt"]
+  s.extra_rdoc_files = ["README.md", "LICENSE.txt"]
   s.license = 'MIT'
 
   s.add_dependency 'rake'
