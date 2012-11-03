@@ -1,5 +1,6 @@
 require 'nokogiri'
 require 'wolfram/xml_container'
+require 'wolfram/hash_presenter'
 require 'wolfram/util'
 require 'wolfram/query'
 require 'wolfram/result'
