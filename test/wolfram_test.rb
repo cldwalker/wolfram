@@ -1,32 +1,32 @@
 require File.join(File.dirname(__FILE__), 'test_helper')
 
-describe "Wolfram" do
-  def wolfram(input)
-    Wolfram.run input.split(/\s+/)
-  end
-
-  describe "#run" do
-    it "with no query returns usage" do
-      capture_stdout { wolfram('') }.should =~ /^Usage: wolfram/
+module Wolfram
+  describe "Wolfram" do
+    def wolfram(input)
+      Wolfram.run input.split(/\s+/)
     end
 
-    it "with normal query returns output" do
-      mock(Wolfram::Query).fetch(anything) { 
-        File.read(File.expand_path(File.dirname(__FILE__) + '/fixtures/boston.xml'))
-      }
-      capture_stdout { wolfram 'boston' }.should =~ /boston/i
-    end
+    describe "#run" do
+      it "with no query returns usage" do
+        capture_stdout { wolfram('') }.should =~ /^Usage: wolfram/
+      end
 
-    it "with invalid response prints error" do
-      mock(Wolfram::Query).fetch(anything) { ' ' }
-      capture_stderr { wolfram 'boston' }.should =~ /^Wolfram Error:.*queryresult/
-    end
+      it "with normal query returns output" do
+        mock(Query).fetch(anything) { read_fixture('boston') }
+        capture_stdout { wolfram 'boston' }.should =~ /boston/i
+      end
 
-    it "with no appid prints error" do
-      val = Wolfram.appid
-      Wolfram.appid = nil
-      capture_stderr { wolfram 'boston' }.should =~ /Wolfram Error:.*APPID/
-      Wolfram.appid = val
+      it "with invalid response prints error" do
+        mock(Query).fetch(anything) { ' ' }
+        capture_stderr { wolfram 'boston' }.should =~ /^Wolfram Error:.*queryresult/
+      end
+
+      it "with no appid prints error" do
+        val = Wolfram.appid
+        Wolfram.appid = nil
+        capture_stderr { wolfram 'boston' }.should =~ /Wolfram Error:.*APPID/
+        Wolfram.appid = val
+      end
     end
   end
 end
