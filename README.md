@@ -1,5 +1,7 @@
-Description
-===========
+Wolfram
+=======
+
+[![Build Status](https://secure.travis-ci.org/spaghetticode/wolfram.png)](http://travis-ci.org/spaghetticode/wolfram)
 
 Explore the vast world of computational knowledge available for free via Wolfram's v2 API.
 
