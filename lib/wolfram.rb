@@ -8,7 +8,6 @@ require 'wolfram/pod'
 require 'wolfram/subpod'
 require 'wolfram/state'
 require 'wolfram/assumption'
-require 'wolfram/version'
 
 module Wolfram
   extend self
