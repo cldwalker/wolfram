@@ -3,9 +3,15 @@ require 'bacon/bits'
 require 'rr'
 require 'bacon/rr'
 require 'wolfram'
+
 Wolfram.appid = 'xxx'
 
 module TestHelpers
+  def read_fixture(name)
+    path = File.expand_path("../fixtures/#{name}.xml", __FILE__)
+    File.read(path)
+  end
+
   def capture_stdout(&block)
     original_stdout = $stdout
     $stdout = fake = StringIO.new

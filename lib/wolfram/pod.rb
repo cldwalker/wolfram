@@ -47,64 +47,7 @@ module Wolfram
     def structured?
       subpods.any?
     end
-
-    class Subpod
-      include XmlContainer
-
-      def self.collection(xml, options = {})
-        Nokogiri::XML(xml.to_s).search('subpod').map {|s_xml| new(s_xml, options) }
-      end
-
-      def initialize(xml, options = {})
-        @query = options[:query]
-        @xml = Nokogiri::Slop(xml.to_s).search('subpod').first
-        @xml or raise MissingNodeError, "<subpod> node missing from xml: #{xml[0..20]}..."
-      end
-
-      def plaintext
-        (e = xml.plaintext) && e.text
-      end
-
-      def img
-        xml.img
-      end
-    end
-
-    class State
-      attr_reader :name, :input
-
-      def self.collection(xml, options = {})
-        Nokogiri::XML(xml.to_s).search('state').map {|s_xml|
-          new(s_xml['name'], options.merge(:input => s_xml['input']))
-        }
-      end
-
-      def initialize(name, options = {})
-        @query = options[:query]
-        @input = options[:input]
-        @name = name
-      end
-
-      def to_query(key)
-        Util.to_query(name, key)
-      end
-
-      def to_s
-        "[#{name}...]"
-      end
-
-      def inspect
-        "#<State: #{to_s}>"
-      end
-
-      def requery
-        podstate = @query.params[:podstate] ? [@query.params[:podstate], input] : input
-        Query.new(@query.input, @query.options.merge(:podstate => podstate))
-      end
-
-      def refetch
-        requery.fetch
-      end
-    end
   end
 end
+
+

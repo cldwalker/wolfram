@@ -1,16 +1,20 @@
 require 'nokogiri'
 require 'wolfram/xml_container'
+require 'wolfram/hash_presenter'
 require 'wolfram/util'
 require 'wolfram/query'
 require 'wolfram/result'
 require 'wolfram/pod'
+require 'wolfram/subpod'
+require 'wolfram/state'
 require 'wolfram/assumption'
-require 'wolfram/version'
 
 module Wolfram
   extend self
 
-  DefaultQueryURI = "http://api.wolframalpha.com/v2/query"
+  class MissingNodeError < RuntimeError; end
+
+  DefaultQueryURI = 'http://api.wolframalpha.com/v2/query'
 
   attr_accessor :appid, :query_uri
 
@@ -27,15 +31,22 @@ module Wolfram
   end
 
   def run(argv=ARGV)
-    return puts("Usage: wolfram QUERY") if argv.empty?
-    puts fetch(argv.join(' ')).inspect
+    puts cli_output(argv)
   rescue MissingNodeError
     warn "Wolfram Error: Invalid response - #{$!.message}"
   rescue RuntimeError
     warn "Wolfram Error: #{$!.message}"
   end
 
-  class MissingNodeError < RuntimeError; end
+  private
+
+  def cli_output(argv)
+    if argv.empty?
+      'Usage: wolfram QUERY'
+    else
+      fetch(argv.join(' ')).inspect
+    end
+  end
 end
 
 Wolfram.appid = ENV['WOLFRAM_APPID']
