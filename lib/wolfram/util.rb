@@ -16,7 +16,7 @@ module Wolfram
 
     # Finds or creates a module by name for a given module
     def self.module_get(mod, name)
-      mod.const_defined?(name) ? mod.const_get(name) : mod.const_set(name, Module.new)
+      const_defined?(mod, name) ? mod.const_get(name) : mod.const_set(name, Module.new)
     end
 
     def delegate(*meths)
@@ -26,6 +26,18 @@ module Wolfram
         define_method(meth) do |*args, &block|
           self.send(to_meth).send(meth, *args, &block)
         end
+      end
+    end
+
+private
+
+    if RUBY_VERSION.to_f > 1.8
+      def self.const_defined?(mod, name)
+        mod.const_defined?(name, false)
+      end
+    else
+      def self.const_defined?(mod, name)
+        mod.const_defined?(name)
       end
     end
   end
