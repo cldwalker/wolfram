@@ -34,7 +34,7 @@ module Wolfram
       end
 
       it 'has :pods and :assumptions as keys' do
-        @to_hash.keys.sort.should == [:pods, :assumptions].sort
+        (@to_hash.keys - [:pods, :assumptions]).should == []
       end
 
       it 'includes expected data' do
