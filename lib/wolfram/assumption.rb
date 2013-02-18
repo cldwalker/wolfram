@@ -49,7 +49,7 @@ module Wolfram
       end
 
       def to_s
-        desc
+        input
       end
 
       def requery
